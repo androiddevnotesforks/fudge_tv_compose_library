@@ -164,26 +164,18 @@ This project has been developed **exclusively for learning and experimentation p
 
 ## 🎖️ Recognition & Credits  
 
+Special thanks to the open-source community and the contributors who have made this project possible.
+
 I want to express my deepest gratitude to the creators of **[JetFit](https://github.com/TheChance101/tv-samples/tree/JetFit/JetFit)** and the contributors to **[PR #183](https://github.com/android/tv-samples/pull/183)** for providing an invaluable foundation for this project. This initiative aims to offer an open-source implementation inspired by JetFit, following the **Apache 2.0** license.  
 
 I would also like to extend my sincere appreciation to **[Umair Khalid](https://github.com/UmairKhalid786)** for his outstanding work on the **[ComposeTv](https://github.com/UmairKhalid786/ComposeTv)** repository. His well-structured code and clear documentation have been essential resources throughout this process, enabling me to learn and apply new techniques in Jetpack Compose development.  
 
 A huge thank you to the community for their efforts and contributions to the open-source ecosystem. I hope this project can also be a valuable resource for other developers! 🚀🙏  
 
-## Contribution
-Contributions to Fudge: Jetpack Compose TV UI Kit are highly encouraged! If you're interested in adding new features, resolving bugs, or enhancing the project's functionality, please feel free to submit pull requests.
-
-## Credits
-Fudge: Jetpack Compose TV UI Kit is developed and maintained by Sergio Sánchez Sánchez (Dream Software). Special thanks to the open-source community and the contributors who have made this project possible. If you have any questions, feedback, or suggestions, feel free to reach out at dreamsoftware92@gmail.com.
-
 ## Visitors Count
 
 <img width="auto" src="https://profile-counter.glitch.me/fudge_tv_compose_library/count.svg" />
- 
- ## Please Share & Star the repository to keep me motivated.
-  <a href = "https://github.com/sergio11/fudge_tv_compose_library/stargazers">
-     <img src = "https://img.shields.io/github/stars/sergio11/fudge_tv_compose_library" />
-  </a>
+
 
 ## License ⚖️
 
