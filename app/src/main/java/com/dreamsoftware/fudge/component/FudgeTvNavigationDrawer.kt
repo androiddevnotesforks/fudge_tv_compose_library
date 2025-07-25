@@ -55,7 +55,8 @@ data class FudgeTvNavigationDrawerItemModel(
 @Composable
 fun FudgeTvNavigationDrawer(
     modifier: Modifier = Modifier,
-    @DrawableRes mainLogoInverseRes: Int,
+    @DrawableRes mainLogoInverseRes: Int? = null,
+    mainLogoContent: @Composable (() -> Unit)? = null,
     logoSize: Dp? = null,
     hiddenDrawerRoutes: List<String> = emptyList(),
     currentDestination: NavDestination?,
@@ -100,13 +101,15 @@ fun FudgeTvNavigationDrawer(
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         if (isDrawerOpen) {
-                            Image(
-                                painter = painterResource(id = mainLogoInverseRes),
-                                contentDescription = null,
-                                modifier = Modifier
-                                    .height(logoSize ?: DEFAULT_DRAWER_LOGO_SIZE)
-                                    .padding(horizontal = 20.dp)
-                            )
+                            mainLogoInverseRes?.let {
+                                Image(
+                                    painter = painterResource(id = it),
+                                    contentDescription = null,
+                                    modifier = Modifier
+                                        .height(logoSize ?: DEFAULT_DRAWER_LOGO_SIZE)
+                                        .padding(horizontal = 20.dp)
+                                )
+                            } ?: mainLogoContent?.invoke()
                         }
                         Spacer(modifier = Modifier.height(15.dp))
                         items.forEach { item ->
